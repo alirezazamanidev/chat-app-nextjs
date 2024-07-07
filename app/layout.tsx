@@ -16,6 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className=" bg-gray-800">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

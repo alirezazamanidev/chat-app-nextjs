@@ -71,6 +71,7 @@
       @apply border-border;
     }
     body {
+      font-family: Vazirmatn, sans-serif;
       @apply bg-background text-foreground;
     }
   }

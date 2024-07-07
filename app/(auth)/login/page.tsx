@@ -1,10 +1,12 @@
+'use client'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import LoginForm from "@/lib/forms/auth/loginForm";
+import { useRouter } from "next/navigation";
 
 
 export default function LoginPage(){
-
+    const router=useRouter();
     return (
         <main className=" bg-gray-800 flex justify-center items-center h-screen">
             <Card className="w-full max-w-sm">
@@ -14,7 +16,7 @@ export default function LoginPage(){
           Enter your userName below to login to your account.
         </CardDescription>
       </CardHeader>
-      <LoginForm/>
+      <LoginForm router={router}/>
      
     </Card>
         
